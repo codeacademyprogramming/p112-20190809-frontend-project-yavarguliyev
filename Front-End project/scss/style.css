@@ -880,7 +880,7 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 30px;
   text-align: center;
-  padding: 23px;
+  padding: 40px;
   -webkit-transition: .3s all ease;
   transition: .3s all ease;
 }
@@ -1128,13 +1128,13 @@ footer {
   text-transform: uppercase;
 }
 
-.card-body-items .news-normal-block {
+.latest-news .container .card-body-items .col-6 .card-body-items .news-normal-block {
   border: 1px solid rgba(34, 34, 34, 0.1);
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
-.card-body-items .card {
+.latest-news .container .card-body-items .col-6 .card-body-items .news-normal-block .card-body-items .card {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
@@ -1144,27 +1144,28 @@ footer {
   padding: 15px 10px;
 }
 
-.card-body-items .col-6 .news-img {
+.latest-news .container .card-body-items .col-6 .news-img {
   margin-bottom: 20px;
 }
 
-.card-body-items .col-6 .news-img img {
+.latest-news .container .card-body-items .col-6 .news-img img {
   max-width: 100%;
   height: auto;
 }
 
-.card-body-items {
+.latest-news .container .card-body-items {
   padding: 2px 16px;
+  line-height: 1.6;
 }
 
-.card-body-items a {
+.latest-news .container .card-body-items a {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 5px;
   color: #505050;
 }
 
-.card-body-items a i {
+.latest-news .container .card-body-items a i {
   font-size: 15px;
   font-weight: 500;
   display: inline-block;
@@ -1172,23 +1173,23 @@ footer {
   color: #ff3115;
 }
 
-h4 a {
+.latest-news .container .card-body-items h4 .title {
   color: #212121;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   text-decoration: none !important;
   outline: none !important;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-h4 p {
+.latest-news .container .card-body-items p {
   margin-bottom: 20px;
 }
 
-.card-button {
+.latest-news .container .card-body-items .col-6 .news-normal-block .card .card-button {
   display: inline-block;
-  margin-left: auto;
+  margin: 10px 0;
   padding: 10px 16px;
   font-size: 13px;
   font-weight: 500;
@@ -1197,30 +1198,33 @@ h4 p {
   color: #fff !important;
 }
 
-.card-body-items .news-list-block {
+.latest-news .container .card-body-items .col-6 .news-list-block {
   margin-bottom: 10px;
 }
 
-.card-body-items .news-list-block .card .container a {
+.latest-news .container .card-body-items .col-6 .news-list-block .card .container a {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 5px;
   color: #505050;
 }
 
-.card-body-items .news-list-block .card .row .col-9 {
+.latest-news .container .card-body-items .col-6 .news-list-block .card .row .col-8 {
   line-height: 1.4;
 }
 
-.card-body-items .news-list-block .card .row .col-9 h4 {
+.latest-news .container .card-body-items .col-6 .news-list-block .card .row .col-8 h4 {
   color: #212121;
+  font-weight: bold;
 }
 
-.card-body-items .news-list-block .card .row .col-9 a {
+.latest-news .container .card-body-items .col-6 .news-list-block .card .row .col-8 .title {
   color: #505050;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.card-body-items .news-list-block .card .row .col-9 i {
+.latest-news .container .card-body-items .col-6 .news-list-block .card .row .col-8 i {
   font-size: 15px;
   font-weight: 500;
   display: inline-block;
@@ -1228,12 +1232,12 @@ h4 p {
   color: #ff3115;
 }
 
-.news-list-item:hover {
+.latest-news .container .card-body-items .col-6 .news-list-item:hover {
   -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
-.public-img img {
+.latest-news .container .card-body-items .col-6 .public-img img {
   max-width: 100%;
 }
 
@@ -1308,12 +1312,6 @@ h4 p {
   padding: 2px 16px;
 }
 
-.image-hover:hover {
-  -webkit-transform: scaleX(1.2);
-          transform: scaleX(1.2);
-  opacity: 1;
-}
-
 .publications .container .row .button-view .view-btn {
   display: inline-block;
   margin: 30px;
@@ -1351,7 +1349,7 @@ h4 p {
 }
 
 .what-people-says .container .row .testimonial-item {
-  padding: 35px;
+  padding: 30px;
   background-color: #ffffff;
   margin: 0 15px;
   cursor: default;
