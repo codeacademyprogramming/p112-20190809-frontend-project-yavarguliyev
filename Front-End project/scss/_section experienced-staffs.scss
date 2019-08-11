@@ -1,0 +1,166 @@
+// Section Experienced Employees
+
+.slider-breaker {
+    width: 50px;
+    height: 3px;
+    background: #ff3115;
+    margin: 5px 0;
+}
+
+.experienced-staffs .container .row .image-slider-experienced .item .box .normal-text {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 20px;
+    min-width: 175px;
+    background-color: rgba(34, 34, 34, 0.8);
+    transition: .3s ease all;
+
+    .team-name {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0;
+        display: block;
+    }
+
+    .subtitle {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0;
+        display: block;
+    }
+}
+
+.experienced-staffs .container .row .image-slider-experienced .item .box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #000;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,.8);
+}
+
+.box:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    border-top: 5px solid rgb(207, 9, 9);
+    border-bottom: 5px solid rgb(207, 9, 9);
+    box-sizing: border-box;
+    transition: 0.5s;
+    // transform: scaleX(0);
+    opacity: 0;
+    z-index: 1;
+}
+
+
+.box:hover:before {
+    // transform: scaleX(1);
+    opacity: 1;
+}
+
+.box:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    border-left: 5px solid rgb(207, 9, 9);
+    border-right: 5px solid rgb(207, 9, 9);
+    box-sizing: border-box;
+    transition: 0.5s;
+    // transform: scaleY(0);
+    opacity: 0;
+    z-index: 1;
+}
+
+.box:hover:after {
+    // transform: scaleY(1);
+    opacity: 1;
+}
+
+.image-box {
+    position: relative;
+    height: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+}
+
+.box:hover img {
+    opacity: .2;
+    // transform: scale(1.2);
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+
+    h3 .name {
+        color: #fff;
+    }
+
+    .icon-items {
+        background-color: #ff3115;
+        margin: 30px 0;
+        padding: 10px;
+        visibility: hidden;
+        border-radius: 50%;
+    }
+
+    .icon-items i {
+        font-size: 15px;
+        padding: 10px;
+        color: #fff;
+        transition: 0.5s;
+        transform: translateY(50%);
+        opacity: 0;
+        visibility: hidden;
+        padding: 0 5px;
+    }
+
+    .text {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        transition: 0.5s;
+        transform: translateY(50%);
+        opacity: 0;
+        visibility: hidden;
+        text-decoration: none;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.8;
+
+        span {
+            color: #fff;
+            display: block;
+        }
+    }
+}
+
+.box:hover .content a i, .box:hover .content .icons, .box:hover .content .text, .box:hover .content a  {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}

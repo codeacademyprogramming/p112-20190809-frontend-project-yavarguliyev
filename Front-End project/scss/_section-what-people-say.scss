@@ -1,0 +1,66 @@
+// Section What People says
+
+.what-people-says {
+    background-image: url(/photos/what-people-say/testimonial-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+.what-people-says .container .row .testimonial-item {
+    padding: 35px;
+    background-color: #ffffff;
+    margin: 0 15px;
+    cursor: default;
+}
+
+.what-people-says .container .row .owl-carousel .item .testimonial-item .testi-img {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 110px;
+    height: 110px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.what-people-says .container .row .owl-carousel .item .testimonial-item .testi-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.what-people-says .container .row .testimonial-item .testi-desc {
+    padding: 42px 0;
+    position: relative;
+}
+
+.what-people-says .container .row .testimonial-item .testi-desc:before, .testimonial-item .testi-desc .i-l {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 26px;
+    color: #ff3115;
+}
+
+.what-people-says .container .row .owl-carousel .item .testimonial-item .testi-desc .testi-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.what-people-says .container .row .owl-carousel .item .testimonial-item .testi-desc p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
+.what-people-says .container .row .owl-carousel .item .testimonial-item .testi-desc .i-r {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 26px;
+    color: #ff3115;
+}

@@ -1,0 +1,74 @@
+// Background Image
+
+#acheivements {
+    background-image: url(/photos/acheivements/counter-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+.acheivements .counter {
+    padding: 100px 0 70px 0 !important;
+}
+
+// Image Effect
+
+.acheivements .counter .container .row .col-6 .counter-content {
+
+    .counter-title {
+        color: #fff;
+        font-size: 30px;
+        line-height: 28px;
+        margin-bottom: 25px;
+    }
+
+    .counter-text p {
+        margin-bottom: 35px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .counter-img img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+// .image-effect-shine::before {
+//     position: absolute;
+//     top: 0;
+//     left: -75%;
+//     z-index: 2;
+//     display: block;
+//     content: '';
+//     width: 50%;
+//     height: 100%;
+//     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+//     transform: skewX(-25deg);
+// }
+
+
+.acheivements .counter .container .row .counter-list-item .row .col-6 .counter-list {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 23px;
+    transition: .3s all ease;
+
+    h2 {
+        font-size: 60px;
+        color: #ffffff;
+        margin-bottom: 6px;
+    }
+
+    h4 {
+        color: #ffffff;
+        font-weight: 500;
+        margin-bottom: 0;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        border-color: #ff3115;
+    }
+}

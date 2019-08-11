@@ -1,0 +1,43 @@
+.design-development .container-fluid {
+    background-image: url(/photos/web-design/cta-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+
+    .row {
+        text-align: center;
+    }
+
+    .col-12 .sec-title {
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: 30px;
+            line-height: 10px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            color: #fff !important;
+        }
+
+        P {
+            margin-bottom: 0;
+            font-size: 16px;
+            line-height: 4;
+        }
+    }
+
+    .col-12 .cta-button {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #ff3115;
+        color: #ffffff;
+        font-weight: 500;
+        min-width: 170px;
+        line-height: 45px;
+        height: 45px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+}
+
