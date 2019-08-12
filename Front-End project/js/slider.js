@@ -50,7 +50,7 @@ $(document).ready(function(){
                     items:3
                 },
                 1000:{
-                    items:5
+                    items:4
                 }
             }
         })
@@ -92,4 +92,44 @@ $(document).ready(function(){
     $('.stop').on('click',function(){
         logo.trigger('stop.owl.autoplay')
     })
+
+    //   Section Popular-Courses 
+
+  $('.popular-card-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
+    //   Section Upcoming-Events 
+
+    $('.upcoming-card-slider').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
   });
+
+

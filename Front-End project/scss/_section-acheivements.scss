@@ -1,6 +1,8 @@
-// Background Image
+// Section Acheivements
 
-#acheivements {
+// Image part
+
+.acheivements .counter {
     background-image: url(/photos/acheivements/counter-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -8,14 +10,10 @@
 }
 
 .acheivements .counter {
-    padding: 100px 0 70px 0 !important;
-}
+    padding-bottom: 70px;
+    padding-top: 100px;
 
-// Image Effect
-
-.acheivements .counter .container .row .col-6 .counter-content {
-
-    .counter-title {
+    .counter-content .counter-title {
         color: #fff;
         font-size: 30px;
         line-height: 28px;
@@ -27,48 +25,74 @@
         color: rgba(255, 255, 255, 0.6);
     }
 
-    .counter-img img {
-        max-width: 100%;
-        height: auto;
+    .counter-img {
+        box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+
+        & {
+            position: relative;
+            overflow: hidden;
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: -75%;
+            z-index: 2;
+            display: block;
+            content: "";
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+            background: linear-gradient(right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+            transform: skew(-25deg);
+        }
+
+        &:hover::before {
+            animation: image-shine 1s;
+        }
+
+        @keyframes image-shine {
+            100% {
+                left: 125%;
+            }
+        }
+
+        img {
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+        }
     }
 }
 
-// .image-effect-shine::before {
-//     position: absolute;
-//     top: 0;
-//     left: -75%;
-//     z-index: 2;
-//     display: block;
-//     content: '';
-//     width: 50%;
-//     height: 100%;
-//     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-//     transform: skewX(-25deg);
-// }
+// Table Row Part
 
+.acheivements .counter .container .row {
+    margin-top: 80px;
 
-.acheivements .counter .container .row .counter-list-item .row .col-6 .counter-list {
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    margin-bottom: 30px;
-    text-align: center;
-    padding: 40px;
-    transition: .3s all ease;
+    .col-md-6 .counter-list {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 23px;
+        transition: .3 all ease;
+        
+        .counter-number {
+            font-size: 60px;
+            color: #fff;
+            margin-bottom: 6px; 
+        }
 
-    h2 {
-        font-size: 60px;
-        color: #ffffff;
-        margin-bottom: 6px;
-    }
+        .counter-desc {
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 0;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
 
-    h4 {
-        color: #ffffff;
-        font-weight: 500;
-        margin-bottom: 0;
-        font-size: 20px;
-        text-transform: uppercase;
-    }
-
-    &:hover {
-        border-color: #ff3115;
+        &:hover {
+            border-color: #ff3115;
+        }
     }
 }

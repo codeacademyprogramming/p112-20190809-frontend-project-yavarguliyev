@@ -103,6 +103,11 @@
     // transform: scale(1.2);
 }
 
+.box:hover .normal-text {
+    opacity: 0;
+    visibility: hidden;
+}
+
 .content {
     position: absolute;
     width: 100%;

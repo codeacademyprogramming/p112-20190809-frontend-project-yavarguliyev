@@ -1,0 +1,164 @@
+// Section Upcoming-events
+
+// Event Header
+
+.upcoming-events .container .row .upcoming-card-slider .item .event-item {
+    margin-bottom: 30px;
+    background: #f9f9f9;
+    border: none;
+
+    .event-img {
+        position: relative;
+        margin-bottom: 22px;
+
+        img {
+            width: 100%;
+            transition: all 0.3s ease 0s;
+        }
+
+        .image-link {
+            position: absolute;
+            bottom: -25px;
+            right: 25px;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 14px;
+            z-index: 1;
+            border-radius: 50%;
+        }
+
+        .course-value {
+            position: absolute;
+            bottom: -25px;
+            right: 25px;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #ff3115;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 50%;
+            z-index: 1;
+        }
+    }
+
+} 
+
+.upcoming-events .container .row .upcoming-card-slider .item .event-item .event-img:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    transform: scaleY(0);
+    transition: 0.4s;
+  }
+  
+.upcoming-events .container .row .upcoming-card-slider .item .event-item .event-img .image-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    color: #ff3115;
+    z-index: 11;
+  }
+  
+.upcoming-events .container .row .upcoming-card-slider .item .event-item .event-img .image-link:hover {
+    color: #fff;
+  }
+  
+.upcoming-events .container .row .upcoming-card-slider .item .event-item .event-img .image-link i {
+    font-size: 22px;
+    font-weight: 400;
+    transform: scale(0);
+    transition: all 0.3s ease 0s;
+  }
+  
+.upcoming-events .container .row .upcoming-card-slider .item .event-item:hover .event-img:after {
+    transform: scaleY(1);
+  }
+  
+.upcoming-events .container .row .upcoming-card-slider .item .event-item:hover .event-img .image-link i {
+    transform: scale(1);
+  }
+
+//   Event Body
+
+.upcoming-events .container .row .upcoming-card-slider .item .event-item .event-details {
+    margin-top: -20px;
+    padding: 15px;
+    background: #fff;
+
+    .event-date {
+        font-size: 14px;
+        font-weight: 500;
+
+        i {
+            font-size: 13px;
+            display: inline-block;
+            margin-right: 5px;
+            color: #ff3115;
+        }
+
+        span {
+            color: #505050;
+        }
+    }
+
+    .event-title {
+        font-size: 20px;
+        margin-bottom: 8px;
+        margin-top: 4px;
+        text-transform: uppercase;
+
+        a {
+            color: #212121;
+
+            &:hover {
+                color: #ff3115;
+            }
+        }
+    }
+
+    .event-meta {
+        font-size: 14px;
+
+        & > div {
+            display: inline-block;
+        }
+
+        & > div i {
+            font-size: 14px;
+            display: inline-block;
+            margin-right: 3px;
+            color: #ff3115;
+        }
+
+        .event-time {
+            margin-right: 10px;
+
+        }
+    }
+
+    .event-time span, .event-location span {
+        color: #505050;
+    }
+}
+
+.upcoming-events .container .row .upcoming-card-slider .item .event-item .btn {
+    margin-top: 18px;
+
+    a {
+        font-weight: 500;
+    }
+}
+
+
