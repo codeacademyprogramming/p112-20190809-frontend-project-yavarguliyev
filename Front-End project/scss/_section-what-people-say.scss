@@ -1,17 +1,15 @@
 // Section What People says
 
 .what-people-says {
-    background-image: url(/photos/what-people-say/testimonial-bg.jpg);
+    background-image: url(../photos/what-people-say/testimonial-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center top;
 }
 
-.what-people-says .container .row .testimonial-item {
-    padding: 30px;
+.what-people-says .container .row .col-md-12 .testimonial-item {
+    padding: 35px;
     background-color: #ffffff;
-    margin: 0 15px;
-    cursor: default;
 }
 
 .what-people-says .container .row .owl-carousel .item .testimonial-item .testi-img {
@@ -25,7 +23,7 @@
     padding: 5px;
     background: #fff;
     border-radius: 50%;
-}
+}   
 
 .what-people-says .container .row .owl-carousel .item .testimonial-item .testi-img img {
     width: 100px;
@@ -63,4 +61,8 @@
     right: 0;
     font-size: 26px;
     color: #ff3115;
+}
+
+.what-people-says .container .row .col-md-12 .owl-stage-outer {
+    padding: 50px 0;
 }

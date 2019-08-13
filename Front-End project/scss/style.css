@@ -84,7 +84,6 @@ a {
 
 section {
   min-height: 100vh;
-  padding: 100px 0;
 }
 
 .sec-title {
@@ -1449,7 +1448,7 @@ footer .footer-icons ul li + li {
 }
 
 .design-development .container-fluid {
-  background-image: url(/photos/web-design/cta-bg.jpg);
+  background-image: url(../photos/web-design/cta-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center top;
@@ -1461,6 +1460,7 @@ footer .footer-icons ul li + li {
 
 .design-development .container-fluid .col-12 .sec-title {
   margin-bottom: 50px;
+  padding-top: 100px;
 }
 
 .design-development .container-fluid .col-12 .sec-title h2 {
@@ -1477,7 +1477,11 @@ footer .footer-icons ul li + li {
   line-height: 4;
 }
 
-.design-development .container-fluid .col-12 .cta-button {
+.design-development .container-fluid .col-12 .btn {
+  padding-bottom: 100px;
+}
+
+.design-development .container-fluid .col-12 .btn .cta-button {
   display: inline-block;
   text-decoration: none;
   background-color: #ff3115;
@@ -1707,17 +1711,15 @@ footer .footer-icons ul li + li {
 }
 
 .what-people-says {
-  background-image: url(/photos/what-people-say/testimonial-bg.jpg);
+  background-image: url(../photos/what-people-say/testimonial-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center top;
 }
 
-.what-people-says .container .row .testimonial-item {
-  padding: 30px;
+.what-people-says .container .row .col-md-12 .testimonial-item {
+  padding: 35px;
   background-color: #ffffff;
-  margin: 0 15px;
-  cursor: default;
 }
 
 .what-people-says .container .row .owl-carousel .item .testimonial-item .testi-img {
@@ -1769,6 +1771,10 @@ footer .footer-icons ul li + li {
   right: 0;
   font-size: 26px;
   color: #ff3115;
+}
+
+.what-people-says .container .row .col-md-12 .owl-stage-outer {
+  padding: 50px 0;
 }
 
 .logos {
@@ -1953,5 +1959,35 @@ footer .footer-icons ul li + li {
 
 .upcoming-events .container .row .upcoming-card-slider .item .event-item .btn a {
   font-weight: 500;
+}
+
+#scrollUp {
+  display: block;
+}
+
+#scrollUp {
+  text-align: center;
+  bottom: 40px;
+  cursor: pointer;
+  position: fixed;
+  right: 40px;
+  z-index: 999;
+}
+
+#scrollUp i {
+  background-color: #ff3115;
+  height: 40px;
+  font-size: 24px;
+  width: 42px;
+  color: #fff;
+  line-height: 36px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  margin-left: 2px;
+}
+
+#scrollUp i:hover {
+  background-color: #e41f05;
+  color: rgba(255, 255, 255, 0.7);
 }
 /*# sourceMappingURL=style.css.map */

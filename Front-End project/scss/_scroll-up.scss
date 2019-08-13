@@ -1,0 +1,30 @@
+// Scroll Up
+
+#scrollUp {
+    display: block;
+}
+
+#scrollUp {
+    text-align: center;
+    bottom: 40px;
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    z-index: 999;
+
+    i {
+        background-color: #ff3115;
+        height: 40px;
+        font-size: 24px;
+        width: 42px;
+        color: #fff;
+        line-height: 36px;
+        transition: all 0.3s ease 0s;
+        margin-left: 2px;
+
+        &:hover {
+            background-color: #e41f05;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+}
