@@ -2,7 +2,11 @@
 
 // Card Header 
 
-.publications .container .row .col-12 .slider-publications .product-item {
+.publications {
+    background-color: #f9f9f9;
+}
+
+.publications .container .col-12 .slider-publications .product-item {
     text-align: center;
     transition: all 0.3s ease 0s;
     background-color: #fff;

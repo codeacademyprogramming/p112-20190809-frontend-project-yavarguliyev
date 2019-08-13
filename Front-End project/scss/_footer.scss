@@ -1,3 +1,290 @@
+// Footer
 footer {
-    margin-top: 1000px;
+    color: #e8e8e8 !important;
+    margin-top: 98px;
+
+    .container {
+        position: relative !important;
+    }
+}
+
+
+.footer-bg-image {
+    background-image: url(../photos/footer/footer-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+// Footer Bottom
+
+.footer-details .footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 18px 0;
+    margin-top: 35px;
+
+    .container .copyright p {
+        opacity: 0.95;
+        margin-bottom: 0;
+        font-size: 15px;
+        color: #e8e8e8
+
+    }
+
+    .container .copyright a {
+        color: #ff3115;
+        transition: all 0.3s ease 0s;
+
+        &:hover,
+        &:active {
+            color: #e41f05;
+        }
+    }
+}
+
+// Footer Top
+
+footer .footer-top {
+    padding-top: 140px;
+
+    .footer-title {
+        margin-bottom: 40px;
+        padding-bottom: 5px;
+        color: #fff !important;
+        font-size: 16px;
+        position: relative;
+        font-weight: 600;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            height: 5%;
+            width: 50px;
+            background-color: #ff3115;
+        }
+    }
+
+    .container .row .col-lg-3 .about-widget p {
+        margin: 0 0 26px;
+        color: #e8e8e8 !important;
+    }
+
+    .container .row .col-lg-3 .about-widget .margin-remove {
+        margin: 0 !important;
+    }
+
+    .post-item {
+        display: flex;
+        align-items: center;
+        transition: all 0.4s ease 0s;
+
+        .post-date {
+            width: 70px;
+            height: 65px;
+            flex: 0 0 70px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            background-color: #ff3115;
+            color: #fff;
+            transition: all 0.4s ease 0s;
+            margin-right: 15px;
+        }
+
+        .post-desc .post-title {
+            font-size: 15px;
+            line-height: 24px;
+            margin-bottom: 0;
+            font-weight: 400;
+
+            a {
+                color: #e8e8e8;
+
+                &:hover,
+                &:focus {
+                    color: #bbbbbb;
+                }
+            }
+        }
+    }
+
+    img {
+        margin-bottom: 25px;
+    }
+
+        .post-desc .post-category {
+            font-size: 15px;
+        }
+
+    .post-item .post-date > span {
+        display: block;
+    }
+
+    .post-item .post-date > span:first-child {
+        margin-top: 10px;
+    }
+
+    .post-item .post-date > span:last-child {
+        font-size: 15px;
+    }
+
+    .post-item + .post-item {
+        margin-top: 18px;
+        padding-top: 18px;
+        border-top: 1px solid rgba(102, 102, 102, 0.5);
+    }
+
+
+        .sitemap-widget li {
+            width: 50%;
+            line-height: 33px;
+            float: left;
+            font-size: 14px;
+            
+            a {
+                color: #e8e8e8;
+                display: inline-block;
+                position: relative;
+
+                &:active,
+                &:hover {
+                    color: #ff3115;
+                }
+
+                i {
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        .col-lg-3 {
+            p {
+                color: #e8e8e8;
+                margin: 0 0 26px;
+            }
+        }
+
+        .news-form {
+            position: relative;
+
+            .form-input {
+                background: rgba(0, 0, 0, 0);
+                border: 1px solid #ff3115;
+                color: #fff;
+                height: 50px;
+                outline: 0 none;
+                padding: 5px 15px;
+                width: 100%;
+                font-size: 16px;
+            }
+
+            button {
+                background: #ff3115;
+                border: none;
+                color: #fff;
+                font-size: 18px;
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 60px;
+
+                &:hover {
+                    background: #e41f05;
+                }
+            }
+        }
+}
+
+// // Footer Address
+
+footer div .footer-contact {
+    margin: 0;
+    background: #222;
+    text-align: center;
+    padding: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: -100px 100px;
+    z-index: 111;
+
+    .contact-inner {
+        position: relative;
+
+        i {
+            font-size: 28px;
+            margin-bottom: 12px;
+            color: #ff3115;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .contact-desc {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 0;
+            font-size: 15px;
+        }
+    }
+}
+
+footer div .footer-contact div[class *= "col-"] + div[class *= "col-"] .contact-inner {
+    border-left: 1px solid #fff;
+}
+
+footer div .footer-contact div[class *= "col-"] + div[class *= "col-"] .contact-inner:before,
+footer div .footer-contact div[class *= "col-"] + div[class *= "col-"] .contact-inner:after {
+    content: "";
+    position: absolute;
+    height: calc(100% - 40px);
+    width: 1px;
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer div .footer-contact div[class *= "col-"] + div[class *= "col-"] .contact-inner:before {
+    left: 3px;
+}
+
+footer div .footer-contact div[class *= "col-"] + div[class *= "col-"] .contact-inner:after {
+    left: -5px;
+}
+
+footer .footer-icons {
+    text-align: center;
+    margin-top: 50px;
+
+    ul li {
+        display: inline-block;
+
+        a {
+            font-size: 13px;
+            display: block;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            line-height: 44px;
+            text-align: center;
+            color: #fff;
+            transition: all .3s ease 0s;
+            background: rgba(255, 255, 255, 0.15);
+
+            &:hover {
+                background-color: #ff3115;
+                color: #fff;
+            }
+        }
+    }
+
+    ul li + li {
+        margin-left: 5px;
+    }
 }

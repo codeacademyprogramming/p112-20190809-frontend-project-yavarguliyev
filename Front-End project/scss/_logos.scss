@@ -1,6 +1,22 @@
 // Logos
 
-.logos .container .row .logos-sliders .item a img {
-    width: 150px;
-    height: 150px;
+.logos {
+    padding: 70px 0 !important;
+}
+
+.logos .container .logos-sliders .item .partner-item a {
+    color: #ff3115;
+    transition: all 0.3s ease 0s;
+    outline: none;
+
+    &:active,
+    &:hover {
+        color: #e41f05;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 }
