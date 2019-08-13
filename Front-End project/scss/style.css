@@ -719,7 +719,7 @@ footer .footer-icons ul li + li {
   margin-left: 5px;
 }
 
-.about-us .services .container .service-icons .col-3 .services-item {
+.services .container .service-icons .col-lg-3 .services-item {
   background-color: #212121;
   padding: 25px 17px 17px;
   -webkit-box-shadow: 0 4px 2px -2px #000000;
@@ -731,7 +731,7 @@ footer .footer-icons ul li + li {
   transition: all 0.3s ease 0s;
 }
 
-.about-us .services .container .service-icons .col-3 .services-item .services-icon {
+.services .container .service-icons .col-lg-3 .services-item .services-icon {
   height: 130px;
   width: 130px;
   background-color: #212121;
@@ -749,12 +749,38 @@ footer .footer-icons ul li + li {
   transition: all 0.3s ease 0s;
 }
 
-.about-us .services .container .service-icons .col-3 .services-item .services-icon i {
+.services .container .service-icons .col-lg-3 .services-item .services-icon i {
   font-size: 30px;
 }
 
-.about-us .services .container .service-icons .col-3 .services-item .services-desc {
+.services .container .service-icons .col-lg-3 .services-item .services-desc {
   line-height: 1.8;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.services .container .service-icons .col-lg-3 .services-item .services-desc .services-title {
+  color: #fff;
+  font-size: 20px;
+  z-index: 10;
+  margin: 0 0 26px;
+}
+
+.services .container .service-icons .col-lg-3 .services-item .services-desc p {
+  color: #ccc;
+}
+
+.services .container .service-icons .col-lg-3 .services-item:hover {
+  background-color: #ff3115;
+}
+
+.services .container .service-icons .col-lg-3 .services-item:hover .services-icon {
+  background-color: #ff3115;
+}
+
+.services .container .service-icons .col-lg-3 .services-item:hover .services-icon,
+.services .container .service-icons .col-lg-3 .services-item:hover .services-desc p {
+  color: #fff;
 }
 
 .about-us .container .row .video-hover .box {

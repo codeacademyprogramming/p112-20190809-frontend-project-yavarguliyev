@@ -1,6 +1,6 @@
 // Services
 
-.about-us .services .container .service-icons .col-3 .services-item {
+.about-us .services .container .service-icons .col-lg-3 .services-item {
     background-color: #212121;
     padding: 25px 17px 17px;
     box-shadow: 0 4px 2px -2px #000000;
@@ -32,7 +32,33 @@
 
     .services-desc {
         line-height: 1.8;
+        text-align: center;
+        margin-top: 6px;
+
+        .services-title {
+            color: #fff;
+            font-size: 20px;
+            z-index: 10;
+            margin: 0 0 26px;
+        }
+
+        p {
+            color: #ccc;
+        }
     }
+}
+
+.services .container .service-icons .col-lg-3 .services-item:hover {
+    background-color: #ff3115;
+}
+
+.services .container .service-icons .col-lg-3 .services-item:hover .services-icon {
+    background-color: #ff3115;
+}
+
+.services .container .service-icons .col-lg-3 .services-item:hover .services-icon,
+.services .container .service-icons .col-lg-3 .services-item:hover .services-desc p {
+    color: #fff;
 }
 
 // Video Hover
