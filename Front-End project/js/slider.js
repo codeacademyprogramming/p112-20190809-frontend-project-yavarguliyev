@@ -40,7 +40,7 @@ $(document).ready(function(){
     
         $('.slider-publications').owlCarousel({
             loop:true,
-            margin:10,
+            margin: 30,
             nav:true,
             responsive:{
                 0:{
@@ -79,7 +79,22 @@ $(document).ready(function(){
 
         let logo = $('.logos-sliders');
         logo.owlCarousel({
-        items:5,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:2,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            },
         loop:true,
         margin:0,
         autoplay:true,

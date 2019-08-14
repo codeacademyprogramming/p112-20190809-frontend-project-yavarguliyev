@@ -82,7 +82,7 @@ a {
 }
 
 section {
-    min-height: 100vh;
+    // min-height: 100vh;
     // padding: 100px 0;
   }
 
@@ -90,6 +90,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
   hr {
@@ -98,3 +99,16 @@ section {
     background-color: #ff3115;
     border-color: #ff3115;
   }
+
+//   Section Titles
+
+@media screen and (max-width: 767px){
+    
+    .sec-title h2 {
+        font-size: 25px !important;
+    }
+
+    .sec-title p {
+        font-size: 12px !important;
+    }
+}

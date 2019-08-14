@@ -47,6 +47,7 @@ footer {
 
 footer .footer-top {
     padding-top: 140px;
+    line-height: 1.6;
 
     .footer-title {
         margin-bottom: 40px;
@@ -209,7 +210,7 @@ footer div .footer-contact {
     position: absolute;
     left: 0;
     right: 0;
-    margin: -100px 100px;
+    margin: -100px auto;
     z-index: 111;
 
     .contact-inner {
@@ -231,6 +232,7 @@ footer div .footer-contact {
             color: rgba(255, 255, 255, 0.7);
             margin-bottom: 0;
             font-size: 15px;
+            line-height: 1.8;
         }
     }
 }
@@ -287,4 +289,52 @@ footer .footer-icons {
     ul li + li {
         margin-left: 5px;
     }
+}
+
+
+
+
+// Footer-Responsiveness
+
+@media screen and (max-width: 767px){
+
+    footer .footer-contact {
+        border-radius: 0;
+        padding: 0px 0 !important
+    }
+
+    footer div .footer-contact .contact-inner {
+        position: relative;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    footer .footer-top .about-widget {
+        padding-top: 300px;
+    }
+
+    footer div .footer-contact div[class*="col-"] + div[class*="col-"] .contact-inner {
+        border-left: none;
+    }
+
+    footer div .footer-contact div[class*="col-"] + div[class*="col-"] .contact-inner:before {
+        left: 0;
+    }
+
+    footer div .footer-contact div[class*="col-"] + div[class*="col-"] .contact-inner:after {
+        left: 0;
+    }
+
+    footer div .footer-contact div[class*="col-"] + div[class*="col-"] .contact-inner:before, footer div .footer-contact div[class*="col-"] + div[class*="col-"] .contact-inner:after {
+        display: none;
+    }
+
+    footer .footer-top .footer-title {
+        margin-top: 30px;
+    }
+
+    footer div .footer-contact {
+        margin: -100px 0;
+    }
+    
 }

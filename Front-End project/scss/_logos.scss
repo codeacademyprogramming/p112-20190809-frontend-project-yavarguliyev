@@ -20,3 +20,20 @@
         height: auto;
     }
 }
+
+// Logos Responsiveness
+
+@media screen and (max-width: 767px){
+
+.logos .owl-carousel .item img {
+    width: 50% !important;
+    }
+    
+    .owl-carousel .owl-stage-outer {
+        padding: 0 30px;
+    }
+
+    .logos {
+        margin-bottom: 100px;
+    }
+}

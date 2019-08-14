@@ -66,3 +66,20 @@
 .what-people-says .container .row .col-md-12 .owl-stage-outer {
     padding: 50px 0;
 }
+
+// What People Say Responsiveness
+
+@media screen and (max-width: 767px){
+
+    .what-people-says .testimonial-item {
+        padding: 25px !important;
+    }
+
+    .what-people-says .sec-title h2 {
+        font-size: 25px !important;
+    }
+
+    .what-people-says  .sec-title p {
+        font-size: 12px !important;
+    }
+}

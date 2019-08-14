@@ -1,0 +1,4 @@
+// Modal Video
+
+
+$(".video").modalVideo();
