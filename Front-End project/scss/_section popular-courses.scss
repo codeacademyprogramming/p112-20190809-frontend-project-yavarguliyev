@@ -86,7 +86,7 @@
   
 .popular-courses .container .row .popular-card-slider .item .cource-item:hover .cource-img .image-link i {
     transform: scale(1);
-  }
+}
 
 // Card Body
 
@@ -168,4 +168,21 @@
         margin-left: 8px;
         border-left: 1px solid #ccc;
     }
+}
+
+
+
+.popular-courses .container .row .popular-card-slider .owl-controls .owl-nav > div {
+    position: absolute !important;
+    top: 50% !important;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    background-color: #444;
+    color: #fff;
+    transform: translateY(-50%);
+    font-size: 22px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
 }

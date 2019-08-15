@@ -7,11 +7,11 @@ $(document).ready(function(){
         loop:true,
         margin:0,
         autoplay:true,
-        autoplayTimeout:3000,
+        autoplayTimeout:2000,
         autoplayHoverPause:true
     });
     $('.play').on('click',function(){
-        intro.trigger('play.owl.autoplay',[3000])
+        intro.trigger('play.owl.autoplay',[2000])
     })
     $('.stop').on('click',function(){
         intro.trigger('stop.owl.autoplay')
@@ -21,17 +21,22 @@ $(document).ready(function(){
     
     $('.image-slider-experienced').owlCarousel({
         loop:true,
-        margin:10,
+        margin:30,
         nav:true,
+        responsiveClass:true,
         responsive:{
             0:{
-                items:1
+                items:1,
+                nav:true
             },
             600:{
-                items:3
+                items:3,
+                nav:false
             },
             1000:{
-                items:3
+                items:3,
+                nav:true,
+                loop:false
             }
         }
     })
