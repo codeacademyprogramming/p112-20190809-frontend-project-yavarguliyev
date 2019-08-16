@@ -229,7 +229,12 @@ header nav .main-menu .search-container .modal-info  {
 
 // Canvas Menu
 
-.sidenav {
+header.sidenav .canvas-logo {
+    padding-left: 24px;
+    padding-bottom: 20px;
+}
+
+header .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -242,20 +247,20 @@ header nav .main-menu .search-container .modal-info  {
     padding-top: 60px;
   }
   
-  .sidenav a {
+header .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
   }
   
-  .sidenav a:hover {
+header .sidenav a:hover {
     color: #f1f1f1;
   }
   
-  .sidenav .closebtn {
+header .sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -263,10 +268,48 @@ header nav .main-menu .search-container .modal-info  {
     margin-left: 50px;
   }
   
-  #main {
+header #main {
     transition: margin-left .5s;
     padding: 0 14px;
   }
+
+header .search-input {
+    padding: 20px 24px 0;
+    position: relative;
+
+    label {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 8px;
+    }
+
+    input {
+    width: 100%;
+    border-radius: 30px;
+    background: #fff;
+    padding: 14px 24px;
+    margin-top: 6px;
+    font-size: 20px;
+    }
+
+    button {
+        color: #ff3115;
+        position: absolute;
+        right: 40px;
+        background: transparent;
+        cursor: pointer;
+        bottom: 11px;
+        font-size: 18px;
+        border: none;
+        outline: none;
+
+        i {
+            display: inline-block;
+        }
+    }
+}
 
 // On-Hover Dropwdown-Menu
 
@@ -450,5 +493,9 @@ header nav .container .row .col-12 .main-menu .mega-menu {
 
     .menu .menu-items .menu-item {
         display: block;
+    }
+
+    .menu {
+        display: none;
     }
 }
