@@ -75,7 +75,7 @@ header .header-top {
 // Bottom-Navigation
 
 header nav {
-    background-color: rgb(27, 27, 27);
+    background-color: #212121;
 
     .m-menu-icon{
         display: none;
@@ -107,6 +107,10 @@ header nav {
                         text-transform: uppercase;
 
                         &.active {
+                            color: #ff3115 !important;
+                        }
+
+                        &:hover {
                             color: #ff3115 !important;
                         }
                     }
@@ -276,6 +280,10 @@ header nav .container .row .col-12 .main-menu .mega-item a {
         display: inline-block;
         color: #bbbbbb;
         text-transform: uppercase;
+
+        &:hover {
+            color: #ff3115 !important;
+        }
 }
 
 header nav .container .row .col-12 .main-menu .menu .menu-items .menu-item {
@@ -293,16 +301,22 @@ header nav .container .row .col-12 .main-menu .menu .menu-items .menu-item {
         z-index: 10;
         background-color: #000;
         width: 300px;
-        padding: 0 20px;
         opacity: 0;
         visibility: hidden;
         transition: all .3s;
 
+        li {
+            border-bottom: 1px solid #222;
+            width: 100%;
+        }
+
         a {
             display: inline-block;
-            border-bottom: 1px solid #bbbbbb;
             width: 100%;
             font-size: 14px;
+            padding: 14px 18px;
+            text-transform: capitalize;
+
             
 
             &:hover {
@@ -329,18 +343,22 @@ header nav .container .row .col-12 .main-menu .mega-menu {
     z-index: 10;
     background-color: #000;
     width: 100%;
-    padding: 0 35px;
+    // padding: 0 35px;
     visibility: hidden;
     opacity: 0;
     transition: all .3s;
 
+    li {
+        border-bottom: 1px solid #222;
+    }
+
     a {
         color: #bbb;
         display: inline-block;
-        padding: 10px 0;
-        border-bottom: 1px solid #bbbbbb;
+        padding: 14px 18px;
         width: 100%;
         font-size: 14px;
+        text-transform: capitalize;
 
         &:hover {
             color: #ff3115;
@@ -348,9 +366,6 @@ header nav .container .row .col-12 .main-menu .mega-menu {
     }
 }
 
-.mega-item .mega-menu ul {
-    padding: 20px 0px;
-}
 
 .mega-item .menu-parent i {
     display: none;

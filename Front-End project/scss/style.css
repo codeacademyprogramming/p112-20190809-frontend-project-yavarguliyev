@@ -202,7 +202,7 @@ header .header-top .toolbar-right ul li a {
 }
 
 header nav {
-  background-color: #1b1b1b;
+  background-color: #212121;
 }
 
 header nav .m-menu-icon {
@@ -242,6 +242,10 @@ header nav .main-menu .menu .menu-items .menu-item a {
 }
 
 header nav .main-menu .menu .menu-items .menu-item a.active {
+  color: #ff3115 !important;
+}
+
+header nav .main-menu .menu .menu-items .menu-item a:hover {
   color: #ff3115 !important;
 }
 
@@ -432,6 +436,10 @@ header nav .container .row .col-12 .main-menu .mega-item a {
   text-transform: uppercase;
 }
 
+header nav .container .row .col-12 .main-menu .mega-item a:hover {
+  color: #ff3115 !important;
+}
+
 header nav .container .row .col-12 .main-menu .menu .menu-items .menu-item {
   position: relative;
 }
@@ -448,18 +456,23 @@ header nav .container .row .col-12 .main-menu .menu .menu-items .menu-item .sub-
   z-index: 10;
   background-color: #000;
   width: 300px;
-  padding: 0 20px;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
+header nav .container .row .col-12 .main-menu .menu .menu-items .menu-item .sub-menu li {
+  border-bottom: 1px solid #222;
+  width: 100%;
+}
+
 header nav .container .row .col-12 .main-menu .menu .menu-items .menu-item .sub-menu a {
   display: inline-block;
-  border-bottom: 1px solid #bbbbbb;
   width: 100%;
   font-size: 14px;
+  padding: 14px 18px;
+  text-transform: capitalize;
 }
 
 header nav .container .row .col-12 .main-menu .menu .menu-items .menu-item .sub-menu a:hover {
@@ -483,28 +496,27 @@ header nav .container .row .col-12 .main-menu .mega-menu {
   z-index: 10;
   background-color: #000;
   width: 100%;
-  padding: 0 35px;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
+header nav .container .row .col-12 .main-menu .mega-menu li {
+  border-bottom: 1px solid #222;
+}
+
 header nav .container .row .col-12 .main-menu .mega-menu a {
   color: #bbb;
   display: inline-block;
-  padding: 10px 0;
-  border-bottom: 1px solid #bbbbbb;
+  padding: 14px 18px;
   width: 100%;
   font-size: 14px;
+  text-transform: capitalize;
 }
 
 header nav .container .row .col-12 .main-menu .mega-menu a:hover {
   color: #ff3115;
-}
-
-.mega-item .mega-menu ul {
-  padding: 20px 0px;
 }
 
 .mega-item .menu-parent i {
@@ -1653,15 +1665,15 @@ footer .footer-icons ul li + li {
   border: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 30px;
   text-align: center;
-  padding: 23px;
+  padding: 40px;
   -webkit-transition: .3 all ease;
   transition: .3 all ease;
 }
 
 .acheivements .counter .container .row .col-md-6 .counter-list .counter-number {
-  font-size: 60px;
+  font-size: 60px !important;
   color: #fff;
-  margin-bottom: 6px;
+  margin-bottom: 20px;
 }
 
 .acheivements .counter .container .row .col-md-6 .counter-list .counter-desc {

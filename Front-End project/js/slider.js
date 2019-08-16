@@ -7,11 +7,11 @@ $(document).ready(function(){
         loop:true,
         margin:0,
         autoplay:true,
-        autoplayTimeout:2000,
-        autoplayHoverPause:true
+        autoplayTimeout:4000,
+        autoplayHoverPause:false
     });
     $('.play').on('click',function(){
-        intro.trigger('play.owl.autoplay',[2000])
+        intro.trigger('play.owl.autoplay',[4000])
     })
     $('.stop').on('click',function(){
         intro.trigger('stop.owl.autoplay')
@@ -45,7 +45,7 @@ $(document).ready(function(){
     
         $('.slider-publications').owlCarousel({
             loop:true,
-            margin: 30,
+            margin: 10,
             nav:true,
             responsive:{
                 0:{

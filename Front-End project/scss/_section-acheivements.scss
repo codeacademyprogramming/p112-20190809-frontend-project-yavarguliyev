@@ -74,13 +74,13 @@
         border: 1px solid rgba(255, 255, 255, 0.2);
         margin-bottom: 30px;
         text-align: center;
-        padding: 23px;
+        padding: 40px;
         transition: .3 all ease;
         
         .counter-number {
-            font-size: 60px;
+            font-size: 60px !important;
             color: #fff;
-            margin-bottom: 6px; 
+            margin-bottom: 20px; 
         }
 
         .counter-desc {
