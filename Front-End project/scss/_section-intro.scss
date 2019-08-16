@@ -111,19 +111,90 @@
     background-color: #ff3115;
  }
 
-@keyframes text {
-    0% {
-        color: black;
-        margin-bottom: -40px;
-    }
+.owl-stage {
+    .active {
+        .text1 {
+          animation-name: slideInLeft;
+        }
+        
+        .text2 {
+        animation-name: slideInRight;
+        }
 
-    30% {
-        letter-spacing: 4px;
-        margin-bottom: -40px;
-    }
-
-    85% {
-        letter-spacing: 4px;
-        margin-bottom: -40px;
+        .bottom {
+            animation-name: slideInUp;
+        }
     }
 }
+
+.slideInLeft {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes slideInLeft {
+    0% {
+    transform: translateX(-100%);
+    visibility: visible;
+    }
+    100% {
+    transform: translateX(0);
+    }
+    }
+    @keyframes slideInLeft {
+    0% {
+    transform: translateX(-100%);
+    visibility: visible;
+    }
+    100% {
+    transform: translateX(0);
+    }
+    } 
+
+    .slideInRight {
+        animation-name: slideInRight;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes slideInRight {
+        0% {
+        transform: translateX(100%);
+        visibility: visible;
+        }
+        100% {
+        transform: translateX(0);
+        }
+        }
+        @keyframes slideInRight {
+        0% {
+        transform: translateX(100%);
+        visibility: visible;
+        }
+        100% {
+        transform: translateX(0);
+        }
+        } 
+
+        .slideInUp {
+            animation-name: slideInUp;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            }
+            @-webkit-keyframes slideInUp {
+            0% {
+            transform: translateY(100%);
+            visibility: visible;
+            }
+            100% {
+            transform: translateY(0);
+            }
+            }
+            @keyframes slideInUp {
+            0% {
+            transform: translateY(100%);
+            visibility: visible;
+            }
+            100% {
+            transform: translateY(0);
+            }
+            } 
