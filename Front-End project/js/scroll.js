@@ -1,7 +1,7 @@
 // $(window).on('scroll', function() {
 //     if($(window).scrollTop()) {
-//         $('#bottomNav').addClass('black');
+//         $('.nav').addClass('black');
 //     } else {
-//         $('#bottomNav').removeClass('black');
+//         $('.nav').removeClass('black');
 //     }
 // });

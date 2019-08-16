@@ -397,26 +397,32 @@ header .sidenav {
   padding-top: 60px;
 }
 
-header .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
 header .sidenav a:hover {
   color: #f1f1f1;
 }
 
 header .sidenav .closebtn {
   position: absolute;
-  top: 0;
+  top: 25px;
   right: 25px;
-  font-size: 36px;
+  font-size: 20px;
   margin-left: 50px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  line-height: 26px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+header .sidenav .closebtn:hover {
+  background-color: #ff3115;
+  border-color: #ff3115;
+  color: #fff;
 }
 
 header #main {
@@ -461,6 +467,67 @@ header .search-input button {
 
 header .search-input button i {
   display: inline-block;
+}
+
+header .sidenav .sidenav-list li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 16px;
+  position: relative;
+  display: block;
+}
+
+header .sidenav .sidenav-list li:before {
+  position: absolute;
+  content: ">";
+  -webkit-transform: translateY(0) rotate(90deg);
+          transform: translateY(0) rotate(90deg);
+  color: #ffffff;
+  width: 32px;
+  height: 32px;
+  line-height: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  right: 8px;
+  top: 5px;
+  cursor: pointer;
+  z-index: 999;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .sidenav .sidenav-list li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 24px;
+  display: block;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .sidenav .sidenav-list li .fade-sidenav {
+  display: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+header .sidenav .sidenav-list li .fade-sidenav:active {
+  display: block;
+}
+
+header .sidenav .sidenav-list li .fade-sidenav li {
+  border: 0;
+  font-size: 16px;
+  position: relative;
+  display: block;
+}
+
+header .sidenav .sidenav-list li .fade-sidenav li a {
+  display: block;
+  padding: 8px 45px;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.15) !important;
 }
 
 header nav .container .row .col-12 .main-menu .menu .menu-items {
@@ -850,7 +917,7 @@ header nav .container .row .col-12 .main-menu .mega-menu a:hover {
   }
 }
 
-.slideInUp {
+slideInUp {
   -webkit-animation-name: slideInUp;
           animation-name: slideInUp;
   -webkit-animation-duration: 1s;
@@ -880,6 +947,12 @@ header nav .container .row .col-12 .main-menu .mega-menu a:hover {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro .item-active img {
+    width: 100%;
   }
 }
 
@@ -1438,6 +1511,12 @@ footer .footer-icons ul li + li {
 
 .about-us .container .row .col-lg-6 .panel p {
   line-height: 26px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us .services .services-item {
+    margin-top: 100px;
+  }
 }
 
 .popular-courses .container .row .popular-card-slider .item .cource-item {

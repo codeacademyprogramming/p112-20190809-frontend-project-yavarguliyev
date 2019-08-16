@@ -45,7 +45,7 @@ $(document).ready(function(){
     
         $('.slider-publications').owlCarousel({
             loop:true,
-            margin: 10,
+            margin:30,
             nav:true,
             responsive:{
                 0:{
@@ -53,11 +53,11 @@ $(document).ready(function(){
                 },
                 600:{
                     items:3
-                },
+                    },
                 1000:{
                     items:4
+                    }
                 }
-            }
         })
 
         // Section What People say
@@ -136,7 +136,7 @@ $(document).ready(function(){
 
     $('.upcoming-card-slider').owlCarousel({
         loop:true,
-        margin:10,
+        margin: 40,
         nav:true,
         responsive:{
             0:{
