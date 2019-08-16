@@ -1,26 +1,37 @@
 // Section Acheivements
 
-$('.counter-number').each(function() {
-    var $this = $(this),
-        countTo = $this.attr('data-count');
-    
-    $({ countNum: $this.text()}).animate({
-      countNum: countTo
-    },
-  
-    {
-  
-      duration: 1000,
-      easing:'linear',
-      step: function() {
-        $this.text(Math.floor(this.countNum));
-      },
-      complete: function() {
-        $this.text(this.countNum);
+
+
+  $(function(){
+    $(window).scroll(function(){
+      var aTop = 1800;
+      if($(this).scrollTop()>=aTop){
+          
+
+        $('.counter-number').each(function() {
+          let $this = $(this),
+              countTo = $this.attr('data-count');
+          
+          $({ countNum: $this.text()}).animate({
+            countNum: countTo
+          },
+        
+          {
+        
+            duration: 1000,
+            easing:'linear',
+            step: function() {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function() {
+              $this.text(this.countNum);
+            }
+        
+          });  
+          
+          
+        
+        });
       }
-  
-    });  
-    
-    
-  
+    });
   });

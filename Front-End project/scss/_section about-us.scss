@@ -195,11 +195,13 @@
 
 .about-us .container .row .col-lg-6 .active, .accordion:hover {
     background-color: #ff3115;;
+    color: #fff;
 }
 
 .about-us .container .row .col-lg-6  .active:after {
     content: "\25b6";
     transform: translateY(0) rotate(90deg);
+    color: #fff;
   }
 
 .about-us .container .row .col-lg-6 .panel {
