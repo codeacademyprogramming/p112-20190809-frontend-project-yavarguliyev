@@ -74,6 +74,44 @@ header .header-top {
 
 // Bottom-Navigation
 
+// Sticky Menu
+
+.menu-sticky.sticky {
+  background: #111111;
+  position: fixed !important;
+  top: 0px;
+  z-index: 999;
+  margin: 0 auto !important;
+  padding: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  animation-duration: .5s;
+  animation-name: sticky-animation;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.menu-sticky.sticky .main-menu {
+  position: static ;
+}
+
+.menu-sticky1.sticky1 .menu-items > li > a {
+  height: 80px;
+  line-height: 80px;
+}
+
+@keyframes sticky-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 header nav {
     background-color: #212121;
 
