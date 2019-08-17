@@ -229,7 +229,7 @@ header nav .main-menu .search-container .modal-info  {
 
 // Canvas Menu
 
-header.sidenav .canvas-logo {
+header .sidenav .canvas-logo {
     padding-left: 24px;
     padding-bottom: 20px;
 }
@@ -241,7 +241,7 @@ header .sidenav {
     z-index: 200;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: rgba(0,0,0,0.9);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -296,7 +296,7 @@ header .search-input {
     width: 100%;
     border-radius: 30px;
     background: #fff;
-    padding: 14px 24px;
+    padding: 8px 24px;
     margin-top: 6px;
     font-size: 20px;
     }
@@ -318,11 +318,50 @@ header .search-input {
     }
 }
 
-header .sidenav .sidenav-list li {
+header .sidenav .sidenav-list .sidenav-undesigned {
     border-bottom: 1px solid rgba(255,255,255,0.15);
     font-size: 16px;
     position: relative;
     display: block;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 24px;
+        display: block;
+        transition: 0.4s;
+    }
+      
+      a{
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        left: 0;
+        transition: 0.5s;
+      }
+      
+      a:after {
+        content: '>';
+        position: absolute;
+        opacity: 0;  
+        top: 14px;
+        right: -10px;
+        left: 310px;
+        transition: 0.5s;
+      }
+      
+      a:hover:after {
+        opacity: 1;
+      }
+}
+
+
+
+header .sidenav .sidenav-list .sidenav-list-menu {
+    font-size: 16px;
+    position: relative;
+    display: block;
+    font-size: 16px;
 
     &:before {
         position: absolute;
@@ -344,12 +383,17 @@ header .sidenav .sidenav-list li {
         transition: 0.4s;
     }
 
-    a {
+    .border-bottom {
+    border-bottom: 1px solid rgba(255,255,255,0.15);
     color: #fff;
     text-decoration: none;
-    padding: 8px 24px;
+    padding: 12px 24px;
     display: block;
     transition: 0.4s;
+}
+
+    .border-top {
+        border-top: 1px solid rgba(255,255,255,0.15);
     }
 
     .fade-sidenav {
@@ -374,6 +418,41 @@ header .sidenav .sidenav-list li {
             }
         }
     }
+}
+
+header .sidenav .sidenav-list .sidenav-list-menu .list-unstyled {
+    display: none;
+
+    a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    display: block;
+    transition: 0.4s;
+    margin-left: 30px;
+}
+
+    a {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        left: 0;
+        transition: 0.5s;
+}
+      
+      a:after {
+        content: '>';
+        position: absolute;
+        opacity: 0;  
+        top: 14px;
+        right: -10px;
+        left: 250px;
+        transition: 0.5s;
+      }
+      
+      a:hover:after {
+        opacity: 1;
+      }
 }
 
 // On-Hover Dropwdown-Menu
@@ -455,7 +534,7 @@ header nav .container .row .col-12 .main-menu .mega-menu {
     opacity: 0;
     transition: all .3s;
 
-    li {
+    .sidenav-list-menu {
         border-bottom: 1px solid #222;
     }
 
@@ -530,10 +609,6 @@ header nav .container .row .col-12 .main-menu .mega-menu {
 
 @media only screen and (max-width:767px) {
 
-    header nav .main-menu .search-container .menu-icon {
-        display: none;
-    }
-
     nav .main-menu .search-container .search-icon {
         position: absolute;
         right: 0;
@@ -557,9 +632,5 @@ header nav .container .row .col-12 .main-menu .mega-menu {
 
     .menu .menu-items .menu-item {
         display: block;
-    }
-
-    .menu {
-        display: none;
     }
 }
