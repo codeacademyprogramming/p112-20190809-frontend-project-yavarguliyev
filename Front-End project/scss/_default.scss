@@ -83,8 +83,12 @@ a {
 
 section {
     // min-height: 100vh;
-    // padding: 100px 0;
-  }
+    padding-bottom: 100px;
+
+    &:last-child {
+        padding-bottom: 0; 
+    }
+}
 
 .sec-title {
     display: flex;

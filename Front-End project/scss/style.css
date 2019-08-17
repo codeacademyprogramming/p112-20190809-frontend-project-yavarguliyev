@@ -82,6 +82,14 @@ a {
   color: #ff3115;
 }
 
+section {
+  padding-bottom: 100px;
+}
+
+section:last-child {
+  padding-bottom: 0;
+}
+
 .sec-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,62 +207,6 @@ header .header-top .toolbar-right ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.menu-sticky.sticky {
-  background: #111111;
-  position: fixed !important;
-  top: 0px;
-  z-index: 999;
-  margin: 0 auto !important;
-  padding: 0;
-  left: 0;
-  right: 0;
-  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-  -webkit-animation-duration: .5s;
-          animation-duration: .5s;
-  -webkit-animation-name: sticky-animation;
-          animation-name: sticky-animation;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-.menu-sticky.sticky .main-menu {
-  position: static;
-}
-
-.menu-sticky1.sticky1 .menu-items > li > a {
-  height: 80px;
-  line-height: 80px;
-}
-
-@-webkit-keyframes sticky-animation {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes sticky-animation {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
 }
 
 header nav {
@@ -821,12 +773,6 @@ header nav .container .row .col-12 .main-menu .mega-menu a:hover {
 }
 
 @media only screen and (max-width: 767px) {
-  nav .main-menu .search-container .search-icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 54px;
-  }
   header nav .main-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -839,11 +785,32 @@ header nav .container .row .col-12 .main-menu .mega-menu a:hover {
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
   }
-  header nav .m-menu-icon {
-    display: block;
-  }
   .menu .menu-items .menu-item {
     display: block;
+  }
+  header nav .search-icon {
+    position: absolute !important;
+    right: 10px !important;
+    top: 0;
+    height: 44px !important;
+    padding: 0 14px !important;
+  }
+  .menu-icon span {
+    padding: 0 !important;
+    font-size: 24px !important;
+  }
+  header .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 60px;
   }
 }
 
@@ -1423,7 +1390,7 @@ footer .footer-icons ul li + li {
           box-shadow: 0 4px 2px -2px #000000;
   z-index: 111;
   position: relative;
-  top: -40px;
+  top: -111px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
@@ -1839,6 +1806,47 @@ footer .footer-icons ul li + li {
   opacity: 0;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-width: 767px) {
+  .popular-courses .owl-stage .item {
+    -webkit-transform: translate3d(-800px, 0px, 0px);
+            transform: translate3d(-800px, 0px, 0px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .intro .owl-stage .item {
+    -webkit-transform: translate3d(-31px, 0px, 0px);
+            transform: translate3d(-31px, 0px, 0px);
+  }
+  .intro .owl-stage .item .text1 {
+    font-size: 24px;
+  }
+  .intro .owl-stage .item .text2 {
+    display: none;
+  }
+  .intro .owl-stage .item .btn-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .intro .owl-stage .item .btn-mobile .btn-left {
+    padding: 4px 8px;
+  }
+  .intro .owl-stage .item .btn-mobile .btn-right {
+    padding: 4px 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .experienced-staffs .owl-stage .item {
+    -webkit-transform: translate3d(-1165px, 0px, 0px);
+            transform: translate3d(-1165px, 0px, 0px);
+  }
 }
 
 .acheivements .counter {
@@ -2418,9 +2426,9 @@ footer .footer-icons ul li + li {
 }
 
 @media screen and (max-width: 767px) {
-  .publications .owl-stage {
-    -webkit-transform: translate3d(-597px, 0px, 0px) !important;
-            transform: translate3d(-597px, 0px, 0px) !important;
+  .publications .owl-stage .item .product-item {
+    -webkit-transform: translate3d(-724px, 0px, 0px) !important;
+            transform: translate3d(-724px, 0px, 0px) !important;
   }
 }
 
@@ -2697,6 +2705,13 @@ footer .footer-icons ul li + li {
 
 .upcoming-events .container .row .upcoming-card-slider .item .event-item .btn a {
   font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+  .upcoming-events .owl-stage .item {
+    -webkit-transform: translate3d(-856px, 0px, 0px) !important;
+            transform: translate3d(-856px, 0px, 0px) !important;
+  }
 }
 
 #scrollUp {

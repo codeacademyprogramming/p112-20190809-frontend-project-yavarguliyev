@@ -108,8 +108,9 @@
 
 @media screen and (max-width: 767px){
 
-    .publications .owl-stage {
-        transform: translate3d(-597px, 0px, 0px) !important;
+    .publications .owl-stage .item .product-item {
+        transform: translate3d(-724px, 0px, 0px) !important;
     }
 
 }
+

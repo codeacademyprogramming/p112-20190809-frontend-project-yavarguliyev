@@ -161,4 +161,10 @@
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .upcoming-events .owl-stage .item {
+        transform: translate3d(-856px, 0px, 0px) !important;
+    }
+}
+
 

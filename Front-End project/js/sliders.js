@@ -21,8 +21,13 @@ $(document).ready(function(){
     
     $('.image-slider-experienced').owlCarousel({
         loop:true,
-        margin:30,
+        margin:10,
         nav:true,
+        navText: [
+            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+        ],
+        navClass: ['owl-prev', 'owl-next'],
         responsiveClass:true,
         responsive:{
             0:{
@@ -34,7 +39,7 @@ $(document).ready(function(){
                 nav:false
             },
             1000:{
-                items:5,
+                items:3,
                 nav:true,
                 loop:false
             }
@@ -52,7 +57,7 @@ $(document).ready(function(){
                     items:1
                 },
                 600:{
-                    items:3
+                    items:1
                     },
                 1000:{
                     items:4

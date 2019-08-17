@@ -186,3 +186,51 @@
     opacity: 0;
     transition: all 0.3s ease 0s;
 }
+
+// Popular-Courses Responsiveness
+
+@media screen and (max-width: 767px){
+
+    .popular-courses .owl-stage .item {
+        transform: translate3d(-800px, 0px, 0px);
+    }
+
+}
+
+
+// Section Intro Responsiveness
+
+@media screen and (max-width: 767px){
+
+    .intro .owl-stage .item {
+        transform: translate3d(-31px, 0px, 0px); 
+
+        .text1 {
+            font-size: 24px;
+        }
+
+        .text2 {
+            display: none;
+        }
+
+        .btn-mobile {
+            display: flex;
+            justify-content: center;
+
+            .btn-left {
+                padding: 4px 8px;
+            }
+
+            .btn-right {
+                padding: 4px 8px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .experienced-staffs .owl-stage .item {
+        transform: translate3d(-1165px, 0px, 0px);
+    }
+}

@@ -1,7 +1,5 @@
 // Section Acheivements
 
-
-
   $(function(){
     $(window).scroll(function(){
       var aTop = 1900;
@@ -28,8 +26,6 @@
             }
         
           });  
-          
-          
         
         });
       }
