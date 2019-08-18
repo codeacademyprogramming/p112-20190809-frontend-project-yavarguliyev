@@ -1,26 +1,19 @@
 // Sticky menu
 
-// (function($) {
-// let header = $('.menu-sticky');
-// let win = $(window);
-// win.on('scroll', function() {
-//    var scroll = win.scrollTop();
-//    if (scroll < 300) {
-//        header.removeClass("sticky");
-//    } else {
-//        header.addClass("sticky");
-//    }
-// });
+const nav = document.querySelector('#navigation');
+const navTop = nav.offsetTop;
 
-// });
-
-// var navbar = document.getElementById("navbar");
-// var sticky = navbar.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
+function stickyNavigation() {
+    console.log('navTop = ' + navTop);
+    console.log('scrollY = ' + window.scrollY);
+  
+    if (window.scrollY >= navTop) {
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      document.body.classList.add('fixed-nav');
+    } else {
+      document.body.style.paddingTop = 100;
+      document.body.classList.remove('fixed-nav');
+    }
 }
+  
+  window.addEventListener('scroll', stickyNavigation);

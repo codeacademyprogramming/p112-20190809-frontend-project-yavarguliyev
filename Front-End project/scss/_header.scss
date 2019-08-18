@@ -74,6 +74,33 @@ header .header-top {
 
 // Bottom-Navigation
 
+.fixed-nav nav {
+    background: #111111;
+    position: fixed !important;
+    top: 0px;
+    z-index: 200;
+    margin: 0 auto !important;
+    padding: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    animation-duration: .5s;
+    animation-name: sticky-animation;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes sticky-animation {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
 header nav {
     background-color: #212121;
 
@@ -627,16 +654,13 @@ header nav .container .row .col-12 .main-menu .mega-menu {
         position: absolute !important;
         right: 10px !important;
         top: 0;
-        height: 44px !important;
+        height: 37px !important;
         padding: 0 14px !important;
     }
 
     .menu-icon span {
         padding: 0 !important;
         font-size: 24px !important;
-        // position: absolute;
-        // left: 10px;
-        // top: 0;
     }
 
     header .sidenav {
@@ -651,4 +675,12 @@ header nav .container .row .col-12 .main-menu .mega-menu {
         transition: 0.5s;
         padding-top: 60px;
     }
+}
+
+@media only screen and (max-width:767px) {
+
+.fixed-nav nav {
+    display: none;
+    }
+
 }
