@@ -675,6 +675,12 @@ header nav .container .row .col-12 .main-menu .mega-menu {
         transition: 0.5s;
         padding-top: 60px;
     }
+
+    header nav .search-container .search-icon .modal-info .modal-content input {
+        padding: 10px 14px;
+        display: inline-block;
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width:767px) {

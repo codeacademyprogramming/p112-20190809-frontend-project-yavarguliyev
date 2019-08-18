@@ -23,11 +23,7 @@ $(document).ready(function(){
         loop:true,
         margin:10,
         nav:true,
-        navText: [
-            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-        ],
-        navClass: ['owl-prev', 'owl-next'],
+        navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
         responsiveClass:true,
         responsive:{
             0:{
@@ -52,6 +48,7 @@ $(document).ready(function(){
             loop:true,
             margin:30,
             nav:true,
+            navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
             responsive:{
                 0:{
                     items:1
@@ -124,6 +121,7 @@ $(document).ready(function(){
     loop:true,
     margin:10,
     nav:true,
+    navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
     responsive:{
         0:{
             items:1
